@@ -48,28 +48,28 @@ Partial Class frmInventario
         ' 
         ' txtStockMinimo
         ' 
-        txtStockMinimo.Location = New Point(140, 235)
+        txtStockMinimo.Location = New Point(112, 212)
         txtStockMinimo.Name = "txtStockMinimo"
         txtStockMinimo.Size = New Size(125, 27)
         txtStockMinimo.TabIndex = 0
         ' 
         ' txtIdProducto
         ' 
-        txtIdProducto.Location = New Point(140, 80)
+        txtIdProducto.Location = New Point(112, 62)
         txtIdProducto.Name = "txtIdProducto"
         txtIdProducto.Size = New Size(125, 27)
         txtIdProducto.TabIndex = 1
         ' 
         ' txtIdAlmacen
         ' 
-        txtIdAlmacen.Location = New Point(140, 124)
+        txtIdAlmacen.Location = New Point(102, 105)
         txtIdAlmacen.Name = "txtIdAlmacen"
         txtIdAlmacen.Size = New Size(125, 27)
         txtIdAlmacen.TabIndex = 2
         ' 
         ' txtIdInventario
         ' 
-        txtIdInventario.Location = New Point(140, 34)
+        txtIdInventario.Location = New Point(112, 21)
         txtIdInventario.Name = "txtIdInventario"
         txtIdInventario.ReadOnly = True
         txtIdInventario.Size = New Size(125, 27)
@@ -77,14 +77,14 @@ Partial Class frmInventario
         ' 
         ' txtCantidadStock
         ' 
-        txtCantidadStock.Location = New Point(140, 172)
+        txtCantidadStock.Location = New Point(121, 156)
         txtCantidadStock.Name = "txtCantidadStock"
         txtCantidadStock.Size = New Size(125, 27)
         txtCantidadStock.TabIndex = 4
         ' 
         ' txtStockMaximo
         ' 
-        txtStockMaximo.Location = New Point(140, 282)
+        txtStockMaximo.Location = New Point(112, 271)
         txtStockMaximo.Name = "txtStockMaximo"
         txtStockMaximo.Size = New Size(125, 27)
         txtStockMaximo.TabIndex = 5
@@ -107,7 +107,7 @@ Partial Class frmInventario
         ' 
         ' btnGuardar
         ' 
-        btnGuardar.Location = New Point(171, 390)
+        btnGuardar.Location = New Point(133, 390)
         btnGuardar.Name = "btnGuardar"
         btnGuardar.Size = New Size(94, 29)
         btnGuardar.TabIndex = 8
@@ -116,7 +116,7 @@ Partial Class frmInventario
         ' 
         ' btnEditar
         ' 
-        btnEditar.Location = New Point(308, 390)
+        btnEditar.Location = New Point(251, 390)
         btnEditar.Name = "btnEditar"
         btnEditar.Size = New Size(94, 29)
         btnEditar.TabIndex = 9
@@ -125,7 +125,7 @@ Partial Class frmInventario
         ' 
         ' btnEliminar
         ' 
-        btnEliminar.Location = New Point(560, 390)
+        btnEliminar.Location = New Point(508, 390)
         btnEliminar.Name = "btnEliminar"
         btnEliminar.Size = New Size(94, 29)
         btnEliminar.TabIndex = 10
@@ -134,7 +134,7 @@ Partial Class frmInventario
         ' 
         ' btnCerrar
         ' 
-        btnCerrar.Location = New Point(441, 390)
+        btnCerrar.Location = New Point(368, 390)
         btnCerrar.Name = "btnCerrar"
         btnCerrar.Size = New Size(94, 29)
         btnCerrar.TabIndex = 11
@@ -144,7 +144,7 @@ Partial Class frmInventario
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(12, 34)
+        Label1.Location = New Point(12, 21)
         Label1.Name = "Label1"
         Label1.Size = New Size(94, 20)
         Label1.TabIndex = 12
@@ -153,7 +153,7 @@ Partial Class frmInventario
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(12, 83)
+        Label2.Location = New Point(10, 62)
         Label2.Name = "Label2"
         Label2.Size = New Size(88, 20)
         Label2.TabIndex = 13
@@ -162,7 +162,7 @@ Partial Class frmInventario
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(12, 124)
+        Label3.Location = New Point(10, 105)
         Label3.Name = "Label3"
         Label3.Size = New Size(86, 20)
         Label3.TabIndex = 14
@@ -171,7 +171,7 @@ Partial Class frmInventario
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(-3, 179)
+        Label4.Location = New Point(-3, 156)
         Label4.Name = "Label4"
         Label4.Size = New Size(109, 20)
         Label4.TabIndex = 15
@@ -180,7 +180,7 @@ Partial Class frmInventario
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(6, 235)
+        Label5.Location = New Point(6, 212)
         Label5.Name = "Label5"
         Label5.Size = New Size(100, 20)
         Label5.TabIndex = 16
@@ -189,7 +189,7 @@ Partial Class frmInventario
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(6, 285)
+        Label6.Location = New Point(3, 271)
         Label6.Name = "Label6"
         Label6.Size = New Size(103, 20)
         Label6.TabIndex = 17
@@ -198,7 +198,7 @@ Partial Class frmInventario
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Location = New Point(6, 340)
+        Label7.Location = New Point(6, 336)
         Label7.Name = "Label7"
         Label7.Size = New Size(140, 20)
         Label7.TabIndex = 18
@@ -207,10 +207,10 @@ Partial Class frmInventario
         ' dgvInventario
         ' 
         dgvInventario.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvInventario.Location = New Point(330, 44)
+        dgvInventario.Location = New Point(243, 3)
         dgvInventario.Name = "dgvInventario"
         dgvInventario.RowHeadersWidth = 51
-        dgvInventario.Size = New Size(458, 261)
+        dgvInventario.Size = New Size(552, 327)
         dgvInventario.TabIndex = 19
         ' 
         ' frmInventario

@@ -160,4 +160,7 @@ Public Class frmProductos
         CargarProductos(txtBuscarNombre.Text)
     End Sub
 
+    Private Sub txtIDProducto_TextChanged(sender As Object, e As EventArgs) Handles txtIDProducto.TextChanged
+
+    End Sub
 End Class

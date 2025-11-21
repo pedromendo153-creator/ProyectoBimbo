@@ -73,36 +73,55 @@ Public Class frmInventario
     End Sub
 
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        ' INSERT
         Try
             Using cn As New SqlConnection(connectionString)
                 cn.Open()
 
-                Dim sql As String = "INSERT INTO Inventario (id_producto, id_almacen, cantidad_stock, stock_minimo, stock_maximo) " &
-                                    "VALUES (@id_producto, @id_almacen, @cantidad_stock, @stock_minimo, @stock_maximo);"
+                ' ✅ VALIDAR SI EXISTE EL PRODUCTO
+                Dim cmdProd As New SqlCommand("SELECT COUNT(*) FROM Producto WHERE id_producto = @idp", cn)
+                cmdProd.Parameters.AddWithValue("@idp", txtIdProducto.Text)
+                Dim existeProd As Integer = CInt(cmdProd.ExecuteScalar())
+
+                If existeProd = 0 Then
+                    MessageBox.Show("El ID del producto NO existe.")
+                    Exit Sub
+                End If
+
+                ' ✅ VALIDAR SI EXISTE EL ALMACÉN
+                Dim cmdAlm As New SqlCommand("SELECT COUNT(*) FROM Almacen WHERE id_almacen = @ida", cn)
+                cmdAlm.Parameters.AddWithValue("@ida", txtIdAlmacen.Text)
+                Dim existeAlm As Integer = CInt(cmdAlm.ExecuteScalar())
+
+                If existeAlm = 0 Then
+                    MessageBox.Show("El ID del almacén NO existe.")
+                    Exit Sub
+                End If
+
+                ' ✅ INSERTAR EN INVENTARIO
+                Dim sql As String = "INSERT INTO Inventario " &
+                                "(id_producto, id_almacen, cantidad_stock, stock_minimo, stock_maximo) " &
+                                "VALUES (@id_producto, @id_almacen, @stock, @min, @max)"
 
                 Using cmd As New SqlCommand(sql, cn)
                     cmd.Parameters.AddWithValue("@id_producto", txtIdProducto.Text)
                     cmd.Parameters.AddWithValue("@id_almacen", txtIdAlmacen.Text)
-                    cmd.Parameters.AddWithValue("@cantidad_stock", txtCantidadStock.Text)
-                    cmd.Parameters.AddWithValue("@stock_minimo", txtStockMinimo.Text)
-                    cmd.Parameters.AddWithValue("@stock_maximo", txtStockMaximo.Text)
+                    cmd.Parameters.AddWithValue("@stock", txtCantidadStock.Text)
+                    cmd.Parameters.AddWithValue("@min", txtStockMinimo.Text)
+                    cmd.Parameters.AddWithValue("@max", txtStockMaximo.Text)
 
                     cmd.ExecuteNonQuery()
                 End Using
             End Using
 
-            MessageBox.Show("Inventario registrado correctamente.")
+            MessageBox.Show("Inventario guardado correctamente.")
             CargarInventario()
             LimpiarCampos()
 
-        Catch ex As SqlException
-            MessageBox.Show("Error al guardar. Verifica que el id_producto y el id_almacen existan." &
-                            Environment.NewLine & ex.Message)
         Catch ex As Exception
             MessageBox.Show("Error al guardar: " & ex.Message)
         End Try
     End Sub
+
 
     Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
         ' UPDATE

@@ -66,6 +66,7 @@ Partial Class frmTransporte
         ' 
         TextBox1.Location = New Point(146, 44)
         TextBox1.Name = "TextBox1"
+        TextBox1.ReadOnly = True
         TextBox1.Size = New Size(125, 27)
         TextBox1.TabIndex = 4
         ' 
@@ -169,7 +170,7 @@ Partial Class frmTransporte
         ' 
         ' frmTransporte
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(788, 450)

@@ -51,57 +51,63 @@ Partial Class frmProductos
         Label6.BackColor = Color.Transparent
         Label6.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.White
-        Label6.Location = New Point(53, 64)
+        Label6.Location = New Point(61, 85)
         Label6.Name = "Label6"
-        Label6.Size = New Size(86, 17)
+        Label6.Size = New Size(111, 23)
         Label6.TabIndex = 5
         Label6.Text = "ID Producto:"
         ' 
         ' txtIDProducto
         ' 
-        txtIDProducto.Location = New Point(158, 61)
+        txtIDProducto.Location = New Point(181, 81)
+        txtIDProducto.Margin = New Padding(3, 4, 3, 4)
         txtIDProducto.Name = "txtIDProducto"
         txtIDProducto.ReadOnly = True
-        txtIDProducto.Size = New Size(171, 23)
+        txtIDProducto.Size = New Size(195, 27)
         txtIDProducto.TabIndex = 6
         ' 
         ' txtNombre
         ' 
-        txtNombre.Location = New Point(158, 115)
+        txtNombre.Location = New Point(181, 153)
+        txtNombre.Margin = New Padding(3, 4, 3, 4)
         txtNombre.Name = "txtNombre"
-        txtNombre.Size = New Size(171, 23)
+        txtNombre.Size = New Size(195, 27)
         txtNombre.TabIndex = 7
         ' 
         ' txtDescripcion
         ' 
-        txtDescripcion.Location = New Point(158, 167)
+        txtDescripcion.Location = New Point(181, 223)
+        txtDescripcion.Margin = New Padding(3, 4, 3, 4)
         txtDescripcion.Multiline = True
         txtDescripcion.Name = "txtDescripcion"
-        txtDescripcion.Size = New Size(171, 23)
+        txtDescripcion.Size = New Size(195, 29)
         txtDescripcion.TabIndex = 8
         ' 
         ' txtPrecio
         ' 
-        txtPrecio.Location = New Point(158, 227)
+        txtPrecio.Location = New Point(181, 303)
+        txtPrecio.Margin = New Padding(3, 4, 3, 4)
         txtPrecio.Multiline = True
         txtPrecio.Name = "txtPrecio"
-        txtPrecio.Size = New Size(171, 23)
+        txtPrecio.Size = New Size(195, 29)
         txtPrecio.TabIndex = 9
         ' 
         ' txtPeso
         ' 
-        txtPeso.Location = New Point(158, 286)
+        txtPeso.Location = New Point(181, 381)
+        txtPeso.Margin = New Padding(3, 4, 3, 4)
         txtPeso.Multiline = True
         txtPeso.Name = "txtPeso"
-        txtPeso.Size = New Size(171, 23)
+        txtPeso.Size = New Size(195, 29)
         txtPeso.TabIndex = 10
         ' 
         ' cboEstado
         ' 
         cboEstado.FormattingEnabled = True
-        cboEstado.Location = New Point(158, 344)
+        cboEstado.Location = New Point(181, 459)
+        cboEstado.Margin = New Padding(3, 4, 3, 4)
         cboEstado.Name = "cboEstado"
-        cboEstado.Size = New Size(171, 23)
+        cboEstado.Size = New Size(195, 28)
         cboEstado.TabIndex = 11
         ' 
         ' btnNuevo
@@ -109,9 +115,10 @@ Partial Class frmProductos
         btnNuevo.BackColor = Color.Black
         btnNuevo.FlatStyle = FlatStyle.Flat
         btnNuevo.ForeColor = Color.White
-        btnNuevo.Location = New Point(50, 424)
+        btnNuevo.Location = New Point(57, 565)
+        btnNuevo.Margin = New Padding(3, 4, 3, 4)
         btnNuevo.Name = "btnNuevo"
-        btnNuevo.Size = New Size(75, 23)
+        btnNuevo.Size = New Size(86, 31)
         btnNuevo.TabIndex = 12
         btnNuevo.Text = "Nuevo"
         btnNuevo.UseVisualStyleBackColor = False
@@ -121,9 +128,10 @@ Partial Class frmProductos
         btnGuardar.BackColor = Color.Black
         btnGuardar.FlatStyle = FlatStyle.Flat
         btnGuardar.ForeColor = Color.White
-        btnGuardar.Location = New Point(178, 424)
+        btnGuardar.Location = New Point(203, 565)
+        btnGuardar.Margin = New Padding(3, 4, 3, 4)
         btnGuardar.Name = "btnGuardar"
-        btnGuardar.Size = New Size(75, 23)
+        btnGuardar.Size = New Size(86, 31)
         btnGuardar.TabIndex = 13
         btnGuardar.Text = "Guardar"
         btnGuardar.UseVisualStyleBackColor = False
@@ -133,9 +141,10 @@ Partial Class frmProductos
         btnActualizar.BackColor = Color.Black
         btnActualizar.FlatStyle = FlatStyle.Flat
         btnActualizar.ForeColor = Color.White
-        btnActualizar.Location = New Point(302, 424)
+        btnActualizar.Location = New Point(345, 565)
+        btnActualizar.Margin = New Padding(3, 4, 3, 4)
         btnActualizar.Name = "btnActualizar"
-        btnActualizar.Size = New Size(75, 23)
+        btnActualizar.Size = New Size(86, 31)
         btnActualizar.TabIndex = 14
         btnActualizar.Text = "Actualizar"
         btnActualizar.UseVisualStyleBackColor = False
@@ -143,16 +152,19 @@ Partial Class frmProductos
         ' dgvProductos
         ' 
         dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvProductos.Location = New Point(368, 167)
+        dgvProductos.Location = New Point(421, 223)
+        dgvProductos.Margin = New Padding(3, 4, 3, 4)
         dgvProductos.Name = "dgvProductos"
-        dgvProductos.Size = New Size(421, 216)
+        dgvProductos.RowHeadersWidth = 51
+        dgvProductos.Size = New Size(481, 288)
         dgvProductos.TabIndex = 15
         ' 
         ' txtBuscarNombre
         ' 
-        txtBuscarNombre.Location = New Point(517, 105)
+        txtBuscarNombre.Location = New Point(591, 140)
+        txtBuscarNombre.Margin = New Padding(3, 4, 3, 4)
         txtBuscarNombre.Name = "txtBuscarNombre"
-        txtBuscarNombre.Size = New Size(272, 23)
+        txtBuscarNombre.Size = New Size(310, 27)
         txtBuscarNombre.TabIndex = 18
         ' 
         ' Label9
@@ -161,9 +173,9 @@ Partial Class frmProductos
         Label9.BackColor = Color.Transparent
         Label9.Font = New Font("Segoe UI Black", 12F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label9.ForeColor = Color.White
-        Label9.Location = New Point(275, 22)
+        Label9.Location = New Point(314, 29)
         Label9.Name = "Label9"
-        Label9.Size = New Size(274, 21)
+        Label9.Size = New Size(344, 28)
         Label9.TabIndex = 19
         Label9.Text = "GESTIÓN DE PRODUCTOS BIMBO:"
         ' 
@@ -173,9 +185,9 @@ Partial Class frmProductos
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(50, 116)
+        Label1.Location = New Point(57, 155)
         Label1.Name = "Label1"
-        Label1.Size = New Size(62, 17)
+        Label1.Size = New Size(81, 23)
         Label1.TabIndex = 20
         Label1.Text = "Nombre:"
         ' 
@@ -185,9 +197,9 @@ Partial Class frmProductos
         Label7.BackColor = Color.Transparent
         Label7.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.White
-        Label7.Location = New Point(50, 168)
+        Label7.Location = New Point(57, 224)
         Label7.Name = "Label7"
-        Label7.Size = New Size(84, 17)
+        Label7.Size = New Size(108, 23)
         Label7.TabIndex = 21
         Label7.Text = "Descripción:"
         ' 
@@ -197,9 +209,9 @@ Partial Class frmProductos
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(53, 228)
+        Label2.Location = New Point(61, 304)
         Label2.Name = "Label2"
-        Label2.Size = New Size(50, 17)
+        Label2.Size = New Size(64, 23)
         Label2.TabIndex = 22
         Label2.Text = "Precio:"
         ' 
@@ -209,9 +221,9 @@ Partial Class frmProductos
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(50, 287)
+        Label3.Location = New Point(57, 383)
         Label3.Name = "Label3"
-        Label3.Size = New Size(70, 17)
+        Label3.Size = New Size(88, 23)
         Label3.TabIndex = 23
         Label3.Text = "Peso (kg):"
         ' 
@@ -221,9 +233,9 @@ Partial Class frmProductos
         Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.White
-        Label4.Location = New Point(50, 345)
+        Label4.Location = New Point(57, 460)
         Label4.Name = "Label4"
-        Label4.Size = New Size(53, 17)
+        Label4.Size = New Size(68, 23)
         Label4.TabIndex = 24
         Label4.Text = "Estado:"
         ' 
@@ -233,20 +245,20 @@ Partial Class frmProductos
         Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.White
-        Label5.Location = New Point(368, 106)
+        Label5.Location = New Point(421, 141)
         Label5.Name = "Label5"
-        Label5.Size = New Size(133, 17)
+        Label5.Size = New Size(176, 23)
         Label5.TabIndex = 25
         Label5.Text = "Buscar por nombre:"
         ' 
         ' frmProductos
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         AutoValidate = AutoValidate.EnablePreventFocusChange
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(828, 518)
+        ClientSize = New Size(946, 691)
         Controls.Add(Label5)
         Controls.Add(Label4)
         Controls.Add(Label3)
@@ -266,6 +278,7 @@ Partial Class frmProductos
         Controls.Add(txtNombre)
         Controls.Add(txtIDProducto)
         Controls.Add(Label6)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "frmProductos"
         Text = "frmProductos"
         CType(dgvProductos, ComponentModel.ISupportInitialize).EndInit()
